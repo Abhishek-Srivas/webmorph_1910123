@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.navbar{
+
+    background-color: #203345;
+    padding: 0; 
+}
+
+#slides{
+
+    background-color: #203345; 
+}
+
+body{
+
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(images/Money_Hiest.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.series h3
+{
+
+    color: white;
+    margin-left: solid;
+
+}
+
+.series img
+{
+
+    width: 100%;
+    margin-top: 15px;
+    box-shadow: -4px 4px 5px 0 #000;
+    cursor: pointer;
+    transition: 1s;
+
+}
+.series img:hover
+{
+
+        transform: translateY(-10px);
+}
+
+#Money_Hiest
+{
+    border-style: solid;
+}
+
+
+
