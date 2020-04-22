@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flux</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://kit.fontawesome.com/67aab30a3c.js" crossorigin="anonymous"></script>
+
+    <style>
+        body{
+        background-color:#152535; 
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body >
+
+
+
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!----Heaader----->
+    <nav class="navbar navbar-expand-md  sticky-top">    <!-----md for style sheet----->
+        <div class="container-fluid">  <!-----fluid so that it takes 100% screen-->
+           <a class=" navbar-brand " href="web.html"></a>
+           <a class=" navbar-brand " href="web.html"><img src="images/logo.png" width="70px" height="50px"></a>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+               <span class="navbar-toggler-icon"></span>
+
+           </button>
+
+           <div class="navbar navbar-collapse " id="navbarResponsive">
+               <ul class="navbar-nav ml-auto">
+                   <li class="nav-item">
+                       <a href="#" class="nav-link" >Home</a>
+                   </li>
+                   <li class="nav-item">
+                    <a href="#" class="nav-link">Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">TV Shows</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Kids</a>
+                </li>
+
+               </ul>
+
+               <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+           </div>
+
+        </div>
+    </nav>
+    
+    <!------Image Slider-------->
+    <div id="slides" class="carousel slide" data-ride="carousel" >
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <li data-target="#slides" data-slide-to="2"></li>
+            <li data-target="#slides" data-slide-to="3"></li>
+            <li data-target="#slides" data-slide-to="4"></li>
+        </ul>
+
+        <div class="carousel-inner">
+           
+            <div class="carousel-item active">
+                <img class="align-center" id="Money_Hiest" src="images/Money_Hiest.jpg"  alt="">
+                <div class="carousel-caption">
+                    <h1 class="display-2">Money Hiest</h1>
+                    <h3>A criminal mastermind who goes by "The Professor" 
+                        has a plan to pull off the biggest heist in recorded 
+                        history -- to print billions of euros in the Royal 
+                        Mint of Spain.</h3>
+                    <button type="button"  class="btn btn-outline-light btn-lg">Play</button>
+                    <button type="button"  class="btn btn-outline-light btn-lg">Add</button>
+                </div>
+            </div>
+
+            <div class="carousel-item ">
+                <img class="align-center" id="Money_Hiest" src="images/Punisher.jpg"  alt="">
+                <div class="carousel-caption">
+                    
+                    <button id="pun" type="button"  class="btn btn-outline-light btn-lg">Play</button>
+                    <button id="pun" type="button"  class="btn btn-outline-light btn-lg">Add</button>
+                </div>
+            </div>
+
+            <div class="carousel-item ">
+                <img class="align-center" id="Money_Hiest" src="images/Riverdale.jpg"  alt="">
+                <div class="carousel-caption">
+                    
+                    <button type="button"  class="btn btn-outline-light btn-lg">Play</button>
+                    <button type="button"  class="btn btn-outline-light btn-lg">Add</button>
+                </div>
+            </div>
+
+            <div class="carousel-item ">
+                <img class="align-center" id="Money_Hiest" src="images/Sex_Education.jpg"  alt="">
+                <div class="carousel-caption">
+                   
+                    <button id="Sex_Education" type="button"  class="btn btn-outline-light btn-lg">Play</button>
+                    <button id="Sex_Education" type="button"  class="btn btn-outline-light btn-lg">Add</button>
+                </div>
+            </div>
+
+            <div class="carousel-item ">
+                <img class="align-center" id="Money_Hiest" src="images\Erased.png"  alt="">
+                <div class="carousel-caption">
+                    
+                    <button id="Erased" type="button"  class="btn btn-outline-light btn-lg">Play</button>
+                    <button id="Erased" type="button"  class="btn btn-outline-light btn-lg">Add</button>
+                </div>
+            </div>
+
+
+            
+
+            
+
+
+        </div>
+
+    </div>
+   
+    <div class="container series">
+
+        <h3>Fan Favourite</h3>
+        <div class="row">
+            <div class="col-md-6">
+
+                <div class="row">
+                    <div class="col-6"><img src="images/Inception.jpg" width="300" height="168" alt=""></div>
+                    <div class="col-6"><img src="images/gully_boy.jpg" width="300" height="168" alt=""></div>    
+                </div>
+            </div>    
+
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-6"><img src="images/Joker.jpg" width="300" height="168" alt=""></div>
+                    <div class="col-6"><img src="images/Punisher.jpg" width="300" height="168" alt=""></div>    
+                </div>
+            </div>
+
+           
+       </div>    
+   </div>
+    
+
+   <div class="container series">
+
+    <h3>Bollywood Binge</h3>
+    <div class="row">
+        <div class="col-md-6">
+
+            <div class="row">
+                <div class="col-6"><img src="images/Malang.jpg" width="300" height="168" alt=""></div>
+                <div class="col-6"><img src="images/3_idiots.jpg" width="300" height="168" alt=""></div>    
+            </div>
+        </div>    
+
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-6"><img src="images/Kesari.jpg" width="300" height="168" alt=""></div>
+                <div class="col-6"><img src="images/war.jpg" width="300" height="168" alt=""></div>    
+            </div>
+        </div>
+
+       
+   </div>    
+</div>
+
+<div class="container series">
+
+    <h3>Watch in your language</h3>
+    <div class="row">
+        <div class="col-md-6">
+
+            <div class="row">
+                <div class="col-6"><img src="images/l1.png" width="300" height="168" alt=""> </div>
+                <div class="col-6"><img src="images/l2.png" width="300" height="168" alt=""></div>    
+            </div>
+        </div>    
+
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-6"><img src="images/l1.png" width="300" height="168" alt=""></div>
+                <div class="col-6"><img src="images/l2.png" width="300" height="168"alt=""></div>    
+            </div>
+        </div>
+
+       
+   </div>    
+</div>
+
+<div class="container series">
+
+    <h3>Top Rated</h3>
+    <div class="row">
+        <div class="col-md-20">
+
+            <div class="row">
+                <div class="col-6"><img src="images/End_Game.jpg"  alt=""></div>
+                <div class="col-6"><img src="images/Your_Name.png" height="312px" alt=""></div>    
+            </div>
+        </div>    
+
+      
+
+       
+   </div>    
+</div>
+
+
+<button  class="fun" data-toggle="collapse" data-target="#emoji">OPEN ME</button>
+ <div id="emoji" class="collapse">
+    <div class="container-fluid padding">
+        <div class="row text-center">
+            <div class="col-sm-6 col-md-3">
+                <img  class="gif" src="images/gif1.gif"  alt="">
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <img  class="gif" src="images/gif2.gif"  alt="">
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <img  class="gif" src="images/gif3.gif"  alt="">
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <img  class="gif" src="images/gif4.gif"  alt="">
+            </div>
+        </div>
+    </div>
+
+ </div>
+
+<div class="container series">
+
+    <h3>Choose by genere</h3>
+    <div class="row">
+        <div class="col-md-6">
+
+            <div class="row">
+                <div class="col-6"><img src="images/MR_BEAN.jpg" width="300" height="168" alt=""></div>
+                <div class="col-6"><img src="images\FSG.jpg" width="300" height="168" alt=""></div>    
+            </div>
+        </div>    
+
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-6"><img src="images/HP.jpg" width="300" height="168" alt=""></div>
+                <div class="col-6"><img src="images/Queen.jpg"  width="300" height="168" alt=""></div>    
+            </div>
+        </div>
+
+       
+   </div>
+   <hr>    
+</div>
+
+<!---------For social media icon and stuff------>
+<div class="container-fluid padding">
+    <div class="row text-center padding">
+        <div class="col-12">
+            <h2 id="con">Connect</h2>
+        </div>
+        <div class="col-12 social padding">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+
+</div>
+
+
+
+<footer>
+
+    <div class="container-fluid padding">
+        <div class="row text-center">
+            <div class="col md-3">
+               <p>About Us</p>
+
+            </div>
+            <div class="col md-3">
+            
+                <p>Career</p>
+
+            </div>
+            <div class="col md-3">
+            
+                <p>FAQ</p>
+            </div>
+
+            <div class="col md-3">
+            
+                <p>Get the App</p>
+            </div>
+             
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid padding">
+        <div class="row text-center">
+            <div class="col md-4">
+                <p>Terms And Policies</p>
+
+            </div>
+            <div class="col md-4">
+                
+                <p>Send feedback</p>
+
+            </div>
+            <div class="col md-4">
+                
+                <p>Help</p>
+            </div>
+             
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid padding">
+        <div class="row text-center">
+            <div class="col md-4">
+                
+                <img src="images/logo.png" width="120px" height="50px" alt="">
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container-fluid padding">
+        <div class="row text-center">
+            <div class="col md-4">
+                
+                    <hr class="light">
+                    <h5>&copy; Flux.com</h5>
+                
+            
+                
+            </div>
+        </div>    
+
+    </div>
+
+    
+</footer>
+
+
+  
+</body>
+</html>
