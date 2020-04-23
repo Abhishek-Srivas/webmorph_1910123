@@ -128,7 +128,7 @@ head,body
     background:#203345;
     margin-bottom: 2rem;
     margin-top: 2rem;
-    transform: translateX(550px);
+    transform: translateX(600px);
    
 }
 
@@ -183,3 +183,24 @@ footer{
 
     color: white;
 }
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    font-size: 150%;
+    transform: translate(-50%, -50%);
+
+}
+.centered img{
+
+    width: 50%;
+    height: 50%;
+}
+
+
+.bottom-left {
+    position: relative;
+    bottom: -30px;
+    left: -70px;
+  }
